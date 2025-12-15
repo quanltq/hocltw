@@ -1,0 +1,51 @@
+/* Nền */
+body {
+  background-color: #7204d2;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Tiêu đề */
+h1 {
+  font-size: 36px;
+}
+
+/* Ô nhập liệu (Tên, Họ đệm, Email, SĐT) */
+.input-box {
+  width: 250px;
+  height: 35px;
+  margin: 5px;
+  padding-left: 10px;
+  border: 1px solid #555;
+  background-color: #c7bfcb;
+  color: rgb(0, 0, 0);
+}
+
+/* Ô chọn thành phố / tỉnh */
+.select-box {
+  width: 150px;
+  height: 35px;
+  margin: 5px;
+  border: 1px solid #555;
+  background-color: #ca05e9;
+  color: rgb(0, 0, 0);
+}
+
+/* Ô ghi chú */
+.note {
+  width: 450px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #555;
+  background-color: #eae4ea;
+  color: rgb(0, 0, 0);
+}
+
+/* Nút Đăng ký */
+.btn {
+  width: 100px;
+  height: 35px;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: #f3aef3;
+}
