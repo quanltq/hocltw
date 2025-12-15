@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Đăng ký tài khoản!</h1>
+
+    <p>Nhập và lựa chọn các thông tin đăng ký.</p>
+
+    <!-- THÊM id CHO CÁC Ô NHẬP -->
+    <input type="text" id="ten" class="input-box" placeholder="Tên" />
+    <input
+      type="text"
+      id="hodem"
+      class="input-box"
+      placeholder="Họ đệm"
+    /><br />
+
+    <input
+      type="email"
+      id="email"
+      class="input-box"
+      placeholder="Địa chỉ Email"
+    />
+    <input
+      type="text"
+      id="phone"
+      class="input-box"
+      placeholder="Số điện thoại"
+    /><br />
+
+    <select id="city" class="select-box">
+      <option value="">Chọn thành phố</option>
+      <option>Hà Nội</option>
+      <option>TP. HCM</option>
+    </select>
+
+    <select id="province" class="select-box">
+      <option value="">Chọn tỉnh</option>
+      <option>Hà Nam</option>
+      <option>Nam Định</option>
+    </select>
+
+    <p>Ghi chú</p>
+    <textarea
+      id="note"
+      class="note"
+      placeholder="Thêm ghi chú của bạn..."
+    ></textarea
+    ><br />
+
+    <!-- NÚT ĐĂNG KÝ CÓ id VÀ type="button" -->
+    <button class="btn" id="btnDangKy" type="button">Đăng ký</button>
+
+    <script>
+      // GÁN SỰ KIỆN CLICK CHO NÚT
+      document
+        .getElementById("btnDangKy")
+        .addEventListener("click", function () {
+          const ten = document.getElementById("ten").value.trim();
+          const hodem = document.getElementById("hodem").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const city = document.getElementById("city").value;
+          const province = document.getElementById("province").value;
+          const note = document.getElementById("note").value.trim();
+
+          const hoTenDayDu = (hodem + " " + ten).trim();
+
+          console.log("Họ tên: " + hoTenDayDu);
+          console.log("Địa chỉ email: " + email);
+          console.log("Tỉnh/Thành phố: " + city + " - " + province);
+          console.log("Ghi chú: " + note);
+          console.log();
+        });
+    </script>
+  </body>
+</html>
